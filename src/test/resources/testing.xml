@@ -1,0 +1,24 @@
+<suite name="TestCases" verbose="1">
+    <test name="Fisdom_Automation_Assignment">
+        <classes>
+            <class name="com.fisdom.testcases.TokenCreation">
+                <methods>
+                    <include name="authtest"/>
+                </methods>
+            </class>
+
+            <class name="com.fisdom.testcases.BookingUpdate">
+                 <methods>
+                     <include name="bookingCreation"/>
+                     <include name="updateBooking"/>
+                     <include name="partialUpdateBooking"/>
+
+                 </methods>
+             </class>
+
+
+        </classes>
+    </test>
+
+
+</suite>
