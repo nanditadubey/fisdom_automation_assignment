@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestCases" duration-ms="18238" started-at="2020-04-25T17:37:59 IST" finished-at="2020-04-25T17:38:17 IST">
+    <groups>
+    </groups>
+    <test name="Fisdom_Automation_Assignment" duration-ms="18238" started-at="2020-04-25T17:37:59 IST" finished-at="2020-04-25T17:38:17 IST">
+      <class name="com.fisdom.testcases.BookingUpdate">
+        <test-method status="PASS" signature="bookingCreation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.fisdom.testcases.BookingUpdate@d8355a8]" name="bookingCreation" duration-ms="1818" started-at="2020-04-25T17:38:04 IST" data-provider="requestdata" finished-at="2020-04-25T17:38:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anand]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Brown]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2018-01-01]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2019-01-01]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Breakfast]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingCreation -->
+        <test-method status="PASS" signature="updateBooking(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.fisdom.testcases.BookingUpdate@d8355a8]" name="updateBooking" duration-ms="5563" started-at="2020-04-25T17:38:06 IST" data-provider="requestdata" finished-at="2020-04-25T17:38:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anand]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Brown]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2018-01-01]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2019-01-01]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Breakfast]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBooking -->
+        <test-method status="PASS" signature="partialUpdateBooking(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.fisdom.testcases.BookingUpdate@d8355a8]" name="partialUpdateBooking" duration-ms="5594" started-at="2020-04-25T17:38:12 IST" data-provider="requestdata" finished-at="2020-04-25T17:38:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anand]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Brown]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2018-01-01]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2019-01-01]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Breakfast]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partialUpdateBooking -->
+      </class> <!-- com.fisdom.testcases.BookingUpdate -->
+      <class name="com.fisdom.testcases.TokenCreation">
+        <test-method status="PASS" signature="authtest(java.lang.String, java.lang.String)[pri:0, instance:com.fisdom.testcases.TokenCreation@46d56d67]" name="authtest" duration-ms="4352" started-at="2020-04-25T17:38:00 IST" data-provider="requestdata" finished-at="2020-04-25T17:38:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authtest -->
+      </class> <!-- com.fisdom.testcases.TokenCreation -->
+    </test> <!-- Fisdom_Automation_Assignment -->
+  </suite> <!-- TestCases -->
+</testng-results>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestCases">
+              <span class="suite-name border-passed">TestCases</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestCases">
+                    <span>testing.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestCases">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestCases">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestCases">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestCases">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestCases">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestCases">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestCases" class="hide-methods passed suite-TestCases"> (hide)</a> <!-- hide-methods passed suite-TestCases -->
+                      <a href="#" panel-name="suite-TestCases" class="show-methods passed suite-TestCases"> (show)</a> <!-- show-methods passed suite-TestCases -->
+                    </span>
+                    <div class="method-list-content passed suite-TestCases">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestCases" title="com.fisdom.testcases.TokenCreation" hash-for-method="authtest(admin, password123)">authtest(admin, password123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestCases" title="com.fisdom.testcases.BookingUpdate" hash-for-method="bookingCreation(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)">bookingCreation(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestCases" title="com.fisdom.testcases.BookingUpdate" hash-for-method="partialUpdateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)">partialUpdateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestCases" title="com.fisdom.testcases.BookingUpdate" hash-for-method="updateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)">updateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestCases -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestCases" class="panel TestCases">
+          <div class="suite-TestCases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.fisdom.testcases.TokenCreation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="authtest(admin, password123)">
+                  </a> <!-- authtest(admin, password123) -->
+                  <span class="method-name">authtest</span>
+                  <span class="parameters">(admin, password123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestCases-class-passed -->
+          <div class="suite-TestCases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.fisdom.testcases.BookingUpdate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bookingCreation(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)">
+                  </a> <!-- bookingCreation(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast) -->
+                  <span class="method-name">bookingCreation</span>
+                  <span class="parameters">(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="partialUpdateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)">
+                  </a> <!-- partialUpdateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast) -->
+                  <span class="method-name">partialUpdateBooking</span>
+                  <span class="parameters">(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)">
+                  </a> <!-- updateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast) -->
+                  <span class="method-name">updateBooking</span>
+                  <span class="parameters">(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestCases-class-passed -->
+        </div> <!-- panel TestCases -->
+        <div panel-name="test-xml-TestCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/nandita.dubey/IdeaProjects/fisdom/fisdom_automation_assignment/src/test/resources/testing.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;TestCases&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Fisdom_Automation_Assignment&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.fisdom.testcases.TokenCreation&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;authtest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.fisdom.testcases.TokenCreation --&gt;
+      &lt;class name=&quot;com.fisdom.testcases.BookingUpdate&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;bookingCreation&quot;/&gt;
+          &lt;include name=&quot;updateBooking&quot;/&gt;
+          &lt;include name=&quot;partialUpdateBooking&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.fisdom.testcases.BookingUpdate --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Fisdom_Automation_Assignment --&gt;
+&lt;/suite&gt; &lt;!-- TestCases --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestCases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Fisdom_Automation_Assignment (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestCases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestCases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestCases');
+function tableData_TestCases() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'partialUpdateBooking')
+data.setCell(0, 2, 'com.fisdom.testcases.BookingUpdate')
+data.setCell(0, 3, 5594);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'updateBooking')
+data.setCell(1, 2, 'com.fisdom.testcases.BookingUpdate')
+data.setCell(1, 3, 5563);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'authtest')
+data.setCell(2, 2, 'com.fisdom.testcases.TokenCreation')
+data.setCell(2, 3, 4352);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'bookingCreation')
+data.setCell(3, 2, 'com.fisdom.testcases.BookingUpdate')
+data.setCell(3, 3, 1818);
+window.suiteTableData['TestCases']= { tableData: data, tableDiv: 'times-div-TestCases'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <div id="times-div-TestCases">
+              </div> <!-- times-div-TestCases -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestCases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestCases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.fisdom.testcases.TokenCreation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">authtest(admin, password123)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.fisdom.testcases.BookingUpdate</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">bookingCreation(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)</span>
+                <span class="method-start">4394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)</span>
+                <span class="method-start">6268 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">partialUpdateBooking(Anand, Brown, 500, true, 2018-01-01, 2019-01-01, Breakfast)</span>
+                <span class="method-start">11862 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

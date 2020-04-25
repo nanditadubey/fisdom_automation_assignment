@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BAT]">
+  <test thread-count="5" name="CIS(failed)">
+    <classes>
+      <class name="com.fisdom.testcases.BookingUpdate">
+        <methods>
+          <include name="partialUpdateBooking" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.fisdom.testcases.BookingUpdate -->
+    </classes>
+  </test> <!-- CIS(failed) -->
+</suite> <!-- Failed suite [BAT] -->

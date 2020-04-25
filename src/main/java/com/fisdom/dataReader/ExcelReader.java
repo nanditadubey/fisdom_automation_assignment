@@ -1,7 +1,7 @@
 package com.fisdom.dataReader;
 
 /**
- * Created by nandita.dubey on 24/04/20.
+ * Created by nandita.dubey on 25/04/20.
  */
 import com.fisdom.constants.ConfigConstants;
 import org.apache.poi.ss.usermodel.CellType;
@@ -13,9 +13,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-/**
- * Created by nanditadubey on 23/09/19.
- */
 public class ExcelReader {
     public static FileInputStream fis;
     public static XSSFWorkbook wb;

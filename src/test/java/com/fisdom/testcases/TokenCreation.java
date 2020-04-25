@@ -6,12 +6,13 @@ import com.fisdom.pojo.*;
 import com.fisdom.utils.RestUtillocal;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.apache.http.HttpStatus;
 import org.testng.annotations.DataProvider;
 
 import java.io.IOException;
 
 /**
- * Created by nandita.dubey on 24/04/20.
+ * Created by nandita.dubey on 25/04/20.
  */
 public class TokenCreation {
     public static Authtoken_Pojo req;
@@ -34,7 +35,7 @@ public class TokenCreation {
             req.setUsername(a);
             req.setPassword(b);
             String auh=req.getUsername();
-            response = RestUtillocal.postCall(req,ConfigConstants.auth);
+            response = RestUtillocal.postCall(req,ConfigConstants.auth, HttpStatus.SC_OK);
             String strr=response.asString();
             JsonPath js = new JsonPath(strr);
             token = js.getString("token");

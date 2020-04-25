@@ -9,18 +9,18 @@ import static io.restassured.RestAssured.given;
  */
 public class RestUtillocal {
 
-    public static Response postCall(Object body, String url) {
+    public static Response postCall(Object body, String url,int statuscode) {
         Response response = null;
         try {
 
             response = given().
-                     contentType(ContentType.JSON)
-                      .body(body)
+                    contentType(ContentType.JSON)
+                    .body(body)
                     .when()
                     .post(url)
                     .then()
                     .assertThat()
-                    .statusCode(200)
+                    .statusCode(statuscode)
                     .extract().response();
         } catch (Exception e) {
             e.printStackTrace();
@@ -29,7 +29,7 @@ public class RestUtillocal {
     }
 
 
-    public static Response putCall(Object body, String url,String token) {
+    public static Response putCall(Object body, String url,String token,int statuscode) {
         Response response = null;
         try {
 
@@ -41,7 +41,7 @@ public class RestUtillocal {
                     .put(url)
                     .then()
                     .assertThat()
-                    .statusCode(200)
+                    .statusCode(statuscode)
                     .extract().response();
         } catch (Exception e) {
             e.printStackTrace();
@@ -49,7 +49,7 @@ public class RestUtillocal {
         return response;
     }
 
-    public static Response patchCall(Object body, String url,String token) {
+    public static Response patchCall(Object body, String url,String token,int statuscode) {
         Response response = null;
         try {
 
@@ -61,7 +61,7 @@ public class RestUtillocal {
                     .patch(url)
                     .then()
                     .assertThat()
-                    .statusCode(200)
+                    .statusCode(statuscode)
                     .extract().response();
         } catch (Exception e) {
             e.printStackTrace();

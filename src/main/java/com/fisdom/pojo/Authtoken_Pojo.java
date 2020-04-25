@@ -1,7 +1,7 @@
 package com.fisdom.pojo;
 
 /**
- * Created by nandita.dubey on 24/04/20.
+ * Created by nandita.dubey on 25/04/20.
  */
 public class Authtoken_Pojo {
 
